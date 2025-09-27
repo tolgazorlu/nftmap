@@ -1,0 +1,1095 @@
+{
+  "version": 3,
+  "sources": [
+    "/Users/tolgazorlu/Desktop/algomap/projects/algomap-contracts/smart_contracts/nft_marketplace/contract.algo.ts"
+  ],
+  "mappings": ";;;;;;;;;;;;;AAmBA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AA2KE;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAXA;;AAAA;AAAA;AAAA;;AAAA;AAhKF;;;AAAA;;;AAgKE;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAXA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAvBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AA9BA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAXA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAXA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AApBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAjBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAPF;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAgKE;;;AAGS;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAP",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "@algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 1"
+    },
+    "4": {
+      "op": "bytecblock 0x151f7c750000"
+    },
+    "13": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "15": {
+      "op": "bz main_bare_routing@17",
+      "stack_out": []
+    },
+    "18": {
+      "op": "pushbytess 0xdbc61a18 0xc1ffb0dd 0x3d24289d 0xb579946d 0x2de8a2cc 0x25044ffb 0x550fe254 0x9dab15f1 0x371defc3 0xf4c812ac 0x70374f66 0x1ed92491 // method \"initialize(string,uint64,string)string\", method \"createListing(uint64,uint64,string,string,uint64,uint64,string,string)string\", method \"buyNFT(uint64,string)string\", method \"cancelListing(uint64)string\", method \"updateListingPrice(uint64,uint64)string\", method \"getListingInfo(uint64)(uint64,uint64,string,string,string,uint64,uint64,string,string)\", method \"getMarketplaceStats()(uint64,uint64,string,string)\", method \"searchListingsByLocation(uint64,uint64,uint64)uint64[]\", method \"searchListingsByCategory(string)uint64[]\", method \"updateMarketplaceFee(uint64)string\", method \"transferOwnership(string)string\", method \"emergencyWithdraw(uint64,string)string\"",
+      "defined_out": [
+        "Method(buyNFT(uint64,string)string)",
+        "Method(cancelListing(uint64)string)",
+        "Method(createListing(uint64,uint64,string,string,uint64,uint64,string,string)string)",
+        "Method(emergencyWithdraw(uint64,string)string)",
+        "Method(getListingInfo(uint64)(uint64,uint64,string,string,string,uint64,uint64,string,string))",
+        "Method(getMarketplaceStats()(uint64,uint64,string,string))",
+        "Method(initialize(string,uint64,string)string)",
+        "Method(searchListingsByCategory(string)uint64[])",
+        "Method(searchListingsByLocation(uint64,uint64,uint64)uint64[])",
+        "Method(transferOwnership(string)string)",
+        "Method(updateListingPrice(uint64,uint64)string)",
+        "Method(updateMarketplaceFee(uint64)string)"
+      ],
+      "stack_out": [
+        "Method(initialize(string,uint64,string)string)",
+        "Method(createListing(uint64,uint64,string,string,uint64,uint64,string,string)string)",
+        "Method(buyNFT(uint64,string)string)",
+        "Method(cancelListing(uint64)string)",
+        "Method(updateListingPrice(uint64,uint64)string)",
+        "Method(getListingInfo(uint64)(uint64,uint64,string,string,string,uint64,uint64,string,string))",
+        "Method(getMarketplaceStats()(uint64,uint64,string,string))",
+        "Method(searchListingsByLocation(uint64,uint64,uint64)uint64[])",
+        "Method(searchListingsByCategory(string)uint64[])",
+        "Method(updateMarketplaceFee(uint64)string)",
+        "Method(transferOwnership(string)string)",
+        "Method(emergencyWithdraw(uint64,string)string)"
+      ]
+    },
+    "80": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(buyNFT(uint64,string)string)",
+        "Method(cancelListing(uint64)string)",
+        "Method(createListing(uint64,uint64,string,string,uint64,uint64,string,string)string)",
+        "Method(emergencyWithdraw(uint64,string)string)",
+        "Method(getListingInfo(uint64)(uint64,uint64,string,string,string,uint64,uint64,string,string))",
+        "Method(getMarketplaceStats()(uint64,uint64,string,string))",
+        "Method(initialize(string,uint64,string)string)",
+        "Method(searchListingsByCategory(string)uint64[])",
+        "Method(searchListingsByLocation(uint64,uint64,uint64)uint64[])",
+        "Method(transferOwnership(string)string)",
+        "Method(updateListingPrice(uint64,uint64)string)",
+        "Method(updateMarketplaceFee(uint64)string)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(initialize(string,uint64,string)string)",
+        "Method(createListing(uint64,uint64,string,string,uint64,uint64,string,string)string)",
+        "Method(buyNFT(uint64,string)string)",
+        "Method(cancelListing(uint64)string)",
+        "Method(updateListingPrice(uint64,uint64)string)",
+        "Method(getListingInfo(uint64)(uint64,uint64,string,string,string,uint64,uint64,string,string))",
+        "Method(getMarketplaceStats()(uint64,uint64,string,string))",
+        "Method(searchListingsByLocation(uint64,uint64,uint64)uint64[])",
+        "Method(searchListingsByCategory(string)uint64[])",
+        "Method(updateMarketplaceFee(uint64)string)",
+        "Method(transferOwnership(string)string)",
+        "Method(emergencyWithdraw(uint64,string)string)",
+        "tmp%2#0"
+      ]
+    },
+    "83": {
+      "op": "match main_initialize_route@3 main_createListing_route@4 main_buyNFT_route@5 main_cancelListing_route@6 main_updateListingPrice_route@7 main_getListingInfo_route@8 main_getMarketplaceStats_route@9 main_searchListingsByLocation_route@10 main_searchListingsByCategory_route@11 main_updateMarketplaceFee_route@12 main_transferOwnership_route@13 main_emergencyWithdraw_route@14",
+      "stack_out": []
+    },
+    "109": {
+      "block": "main_after_if_else@21",
+      "stack_in": [],
+      "op": "pushint 0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "111": {
+      "op": "return",
+      "stack_out": []
+    },
+    "112": {
+      "block": "main_emergencyWithdraw_route@14",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%92#0"
+      ],
+      "stack_out": [
+        "tmp%92#0"
+      ]
+    },
+    "114": {
+      "op": "!",
+      "defined_out": [
+        "tmp%93#0"
+      ],
+      "stack_out": [
+        "tmp%93#0"
+      ]
+    },
+    "115": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "116": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%94#0"
+      ],
+      "stack_out": [
+        "tmp%94#0"
+      ]
+    },
+    "118": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "119": {
+      "op": "pushbytes 0x151f7c75001e456d657267656e6379207769746864726177616c20636f6d706c65746564",
+      "defined_out": [
+        "0x151f7c75001e456d657267656e6379207769746864726177616c20636f6d706c65746564"
+      ],
+      "stack_out": [
+        "0x151f7c75001e456d657267656e6379207769746864726177616c20636f6d706c65746564"
+      ]
+    },
+    "157": {
+      "op": "log",
+      "stack_out": []
+    },
+    "158": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "159": {
+      "op": "return",
+      "stack_out": []
+    },
+    "160": {
+      "block": "main_transferOwnership_route@13",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%85#0"
+      ],
+      "stack_out": [
+        "tmp%85#0"
+      ]
+    },
+    "162": {
+      "op": "!",
+      "defined_out": [
+        "tmp%86#0"
+      ],
+      "stack_out": [
+        "tmp%86#0"
+      ]
+    },
+    "163": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "164": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%87#0"
+      ],
+      "stack_out": [
+        "tmp%87#0"
+      ]
+    },
+    "166": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "167": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%89#0"
+      ],
+      "stack_out": [
+        "tmp%89#0"
+      ]
+    },
+    "170": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%90#0"
+      ],
+      "stack_out": [
+        "tmp%90#0"
+      ]
+    },
+    "173": {
+      "callsub": "smart_contracts/nft_marketplace/contract.algo.ts::NFTMarketplace.transferOwnership",
+      "op": "callsub transferOwnership",
+      "defined_out": [
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0"
+      ]
+    },
+    "176": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%6#0",
+        "to_encode%6#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "to_encode%6#0 (copy)"
+      ]
+    },
+    "177": {
+      "op": "len",
+      "defined_out": [
+        "length%13#0",
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "length%13#0"
+      ]
+    },
+    "178": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%20#0",
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "as_bytes%20#0"
+      ]
+    },
+    "179": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%13#0",
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "length_uint16%13#0"
+      ]
+    },
+    "182": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%13#0",
+        "to_encode%6#0"
+      ]
+    },
+    "183": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%13#0"
+      ],
+      "stack_out": [
+        "encoded_value%13#0"
+      ]
+    },
+    "184": {
+      "op": "pushbytes 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%13#0"
+      ],
+      "stack_out": [
+        "encoded_value%13#0",
+        "0x151f7c75"
+      ]
+    },
+    "190": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%13#0"
+      ]
+    },
+    "191": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%91#0"
+      ],
+      "stack_out": [
+        "tmp%91#0"
+      ]
+    },
+    "192": {
+      "op": "log",
+      "stack_out": []
+    },
+    "193": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "194": {
+      "op": "return",
+      "stack_out": []
+    },
+    "195": {
+      "block": "main_updateMarketplaceFee_route@12",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%79#0"
+      ],
+      "stack_out": [
+        "tmp%79#0"
+      ]
+    },
+    "197": {
+      "op": "!",
+      "defined_out": [
+        "tmp%80#0"
+      ],
+      "stack_out": [
+        "tmp%80#0"
+      ]
+    },
+    "198": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "199": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%81#0"
+      ],
+      "stack_out": [
+        "tmp%81#0"
+      ]
+    },
+    "201": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "202": {
+      "op": "pushbytes 0x151f7c75000b4665652075706461746564",
+      "defined_out": [
+        "0x151f7c75000b4665652075706461746564"
+      ],
+      "stack_out": [
+        "0x151f7c75000b4665652075706461746564"
+      ]
+    },
+    "221": {
+      "op": "log",
+      "stack_out": []
+    },
+    "222": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "223": {
+      "op": "return",
+      "stack_out": []
+    },
+    "224": {
+      "block": "main_searchListingsByCategory_route@11",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%71#0"
+      ],
+      "stack_out": [
+        "tmp%71#0"
+      ]
+    },
+    "226": {
+      "op": "!",
+      "defined_out": [
+        "tmp%72#0"
+      ],
+      "stack_out": [
+        "tmp%72#0"
+      ]
+    },
+    "227": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "228": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%73#0"
+      ],
+      "stack_out": [
+        "tmp%73#0"
+      ]
+    },
+    "230": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "231": {
+      "op": "bytec_0 // 0x151f7c750000",
+      "defined_out": [
+        "0x151f7c750000"
+      ],
+      "stack_out": [
+        "0x151f7c750000"
+      ]
+    },
+    "232": {
+      "op": "log",
+      "stack_out": []
+    },
+    "233": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "234": {
+      "op": "return",
+      "stack_out": []
+    },
+    "235": {
+      "block": "main_searchListingsByLocation_route@10",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%62#0"
+      ],
+      "stack_out": [
+        "tmp%62#0"
+      ]
+    },
+    "237": {
+      "op": "!",
+      "defined_out": [
+        "tmp%63#0"
+      ],
+      "stack_out": [
+        "tmp%63#0"
+      ]
+    },
+    "238": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "239": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%64#0"
+      ],
+      "stack_out": [
+        "tmp%64#0"
+      ]
+    },
+    "241": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "242": {
+      "op": "bytec_0 // 0x151f7c750000",
+      "defined_out": [
+        "0x151f7c750000"
+      ],
+      "stack_out": [
+        "0x151f7c750000"
+      ]
+    },
+    "243": {
+      "op": "log",
+      "stack_out": []
+    },
+    "244": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "245": {
+      "op": "return",
+      "stack_out": []
+    },
+    "246": {
+      "block": "main_getMarketplaceStats_route@9",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%57#0"
+      ],
+      "stack_out": [
+        "tmp%57#0"
+      ]
+    },
+    "248": {
+      "op": "!",
+      "defined_out": [
+        "tmp%58#0"
+      ],
+      "stack_out": [
+        "tmp%58#0"
+      ]
+    },
+    "249": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "250": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%59#0"
+      ],
+      "stack_out": [
+        "tmp%59#0"
+      ]
+    },
+    "252": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "253": {
+      "op": "pushbytes 0x151f7c750000000000000000000000000000000500140023000d4f574e45525f4144445245535300134645455f4143434f554e545f41444452455353",
+      "defined_out": [
+        "0x151f7c750000000000000000000000000000000500140023000d4f574e45525f4144445245535300134645455f4143434f554e545f41444452455353"
+      ],
+      "stack_out": [
+        "0x151f7c750000000000000000000000000000000500140023000d4f574e45525f4144445245535300134645455f4143434f554e545f41444452455353"
+      ]
+    },
+    "315": {
+      "op": "log",
+      "stack_out": []
+    },
+    "316": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "317": {
+      "op": "return",
+      "stack_out": []
+    },
+    "318": {
+      "block": "main_getListingInfo_route@8",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%51#0"
+      ],
+      "stack_out": [
+        "tmp%51#0"
+      ]
+    },
+    "320": {
+      "op": "!",
+      "defined_out": [
+        "tmp%52#0"
+      ],
+      "stack_out": [
+        "tmp%52#0"
+      ]
+    },
+    "321": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "322": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%53#0"
+      ],
+      "stack_out": [
+        "tmp%53#0"
+      ]
+    },
+    "324": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "325": {
+      "op": "pushbytes 0x151f7c7500000000000f42400000000000000001002a003b004700000000026d3a600000000004693df0005b0078000f43524541544f525f41444452455353000a53616d706c6520417274001253616d706c65206465736372697074696f6e001b68747470733a2f2f6578616d706c652e636f6d2f6172742e6a7067000b4469676974616c20417274",
+      "defined_out": [
+        "0x151f7c7500000000000f42400000000000000001002a003b004700000000026d3a600000000004693df0005b0078000f43524541544f525f41444452455353000a53616d706c6520417274001253616d706c65206465736372697074696f6e001b68747470733a2f2f6578616d706c652e636f6d2f6172742e6a7067000b4469676974616c20417274"
+      ],
+      "stack_out": [
+        "0x151f7c7500000000000f42400000000000000001002a003b004700000000026d3a600000000004693df0005b0078000f43524541544f525f41444452455353000a53616d706c6520417274001253616d706c65206465736372697074696f6e001b68747470733a2f2f6578616d706c652e636f6d2f6172742e6a7067000b4469676974616c20417274"
+      ]
+    },
+    "465": {
+      "op": "log",
+      "stack_out": []
+    },
+    "466": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "467": {
+      "op": "return",
+      "stack_out": []
+    },
+    "468": {
+      "block": "main_updateListingPrice_route@7",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%44#0"
+      ],
+      "stack_out": [
+        "tmp%44#0"
+      ]
+    },
+    "470": {
+      "op": "!",
+      "defined_out": [
+        "tmp%45#0"
+      ],
+      "stack_out": [
+        "tmp%45#0"
+      ]
+    },
+    "471": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "472": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%46#0"
+      ],
+      "stack_out": [
+        "tmp%46#0"
+      ]
+    },
+    "474": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "475": {
+      "op": "pushbytes 0x151f7c75000d50726963652075706461746564",
+      "defined_out": [
+        "0x151f7c75000d50726963652075706461746564"
+      ],
+      "stack_out": [
+        "0x151f7c75000d50726963652075706461746564"
+      ]
+    },
+    "496": {
+      "op": "log",
+      "stack_out": []
+    },
+    "497": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "498": {
+      "op": "return",
+      "stack_out": []
+    },
+    "499": {
+      "block": "main_cancelListing_route@6",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%38#0"
+      ],
+      "stack_out": [
+        "tmp%38#0"
+      ]
+    },
+    "501": {
+      "op": "!",
+      "defined_out": [
+        "tmp%39#0"
+      ],
+      "stack_out": [
+        "tmp%39#0"
+      ]
+    },
+    "502": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "503": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%40#0"
+      ],
+      "stack_out": [
+        "tmp%40#0"
+      ]
+    },
+    "505": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "506": {
+      "op": "pushbytes 0x151f7c7500114c697374696e672063616e63656c6c6564",
+      "defined_out": [
+        "0x151f7c7500114c697374696e672063616e63656c6c6564"
+      ],
+      "stack_out": [
+        "0x151f7c7500114c697374696e672063616e63656c6c6564"
+      ]
+    },
+    "531": {
+      "op": "log",
+      "stack_out": []
+    },
+    "532": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "533": {
+      "op": "return",
+      "stack_out": []
+    },
+    "534": {
+      "block": "main_buyNFT_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%30#0"
+      ]
+    },
+    "536": {
+      "op": "!",
+      "defined_out": [
+        "tmp%31#0"
+      ],
+      "stack_out": [
+        "tmp%31#0"
+      ]
+    },
+    "537": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "538": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%32#0"
+      ],
+      "stack_out": [
+        "tmp%32#0"
+      ]
+    },
+    "540": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "541": {
+      "op": "pushbytes 0x151f7c75000d4e465420707572636861736564",
+      "defined_out": [
+        "0x151f7c75000d4e465420707572636861736564"
+      ],
+      "stack_out": [
+        "0x151f7c75000d4e465420707572636861736564"
+      ]
+    },
+    "562": {
+      "op": "log",
+      "stack_out": []
+    },
+    "563": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "564": {
+      "op": "return",
+      "stack_out": []
+    },
+    "565": {
+      "block": "main_createListing_route@4",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "567": {
+      "op": "!",
+      "defined_out": [
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%14#0"
+      ]
+    },
+    "568": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "569": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%15#0"
+      ]
+    },
+    "571": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "572": {
+      "op": "pushbytes 0x151f7c75000f4c697374696e672063726561746564",
+      "defined_out": [
+        "0x151f7c75000f4c697374696e672063726561746564"
+      ],
+      "stack_out": [
+        "0x151f7c75000f4c697374696e672063726561746564"
+      ]
+    },
+    "595": {
+      "op": "log",
+      "stack_out": []
+    },
+    "596": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "597": {
+      "op": "return",
+      "stack_out": []
+    },
+    "598": {
+      "block": "main_initialize_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "600": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "601": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "602": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "604": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "605": {
+      "op": "pushbytes 0x151f7c7500174d61726b6574706c61636520696e697469616c697a6564",
+      "defined_out": [
+        "0x151f7c7500174d61726b6574706c61636520696e697469616c697a6564"
+      ],
+      "stack_out": [
+        "0x151f7c7500174d61726b6574706c61636520696e697469616c697a6564"
+      ]
+    },
+    "636": {
+      "op": "log",
+      "stack_out": []
+    },
+    "637": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "638": {
+      "op": "return",
+      "stack_out": []
+    },
+    "639": {
+      "block": "main_bare_routing@17",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%100#0"
+      ],
+      "stack_out": [
+        "tmp%100#0"
+      ]
+    },
+    "641": {
+      "op": "bnz main_after_if_else@21",
+      "stack_out": []
+    },
+    "644": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%101#0"
+      ],
+      "stack_out": [
+        "tmp%101#0"
+      ]
+    },
+    "646": {
+      "op": "!",
+      "defined_out": [
+        "tmp%102#0"
+      ],
+      "stack_out": [
+        "tmp%102#0"
+      ]
+    },
+    "647": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "648": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "649": {
+      "op": "return",
+      "stack_out": []
+    },
+    "650": {
+      "subroutine": "smart_contracts/nft_marketplace/contract.algo.ts::NFTMarketplace.transferOwnership",
+      "params": {
+        "newOwner#0": "bytes"
+      },
+      "block": "transferOwnership",
+      "stack_in": [],
+      "op": "proto 1 1"
+    },
+    "653": {
+      "op": "pushbytes \"Ownership transferred to \"",
+      "defined_out": [
+        "\"Ownership transferred to \""
+      ],
+      "stack_out": [
+        "\"Ownership transferred to \""
+      ]
+    },
+    "680": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"Ownership transferred to \"",
+        "newOwner#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Ownership transferred to \"",
+        "newOwner#0 (copy)"
+      ]
+    },
+    "682": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "683": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}

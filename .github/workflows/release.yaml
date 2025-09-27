@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - '.vscode/**'
+      - '.idea/**'
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  algomap-contracts-validate:
+    name: Run algomap-contracts release
+    secrets: inherit
+    uses: ./.github/workflows/algomap-contracts-ci.yaml
+
+  algomap-contracts-release:
+    name: Run algomap-contracts release
+    secrets: inherit
+    uses: ./.github/workflows/algomap-contracts-cd.yaml
+    needs: algomap-contracts-validate
+
+  algomap-frontend-validate:
+    name: Run algomap-frontend release
+    secrets: inherit
+    uses: ./.github/workflows/algomap-frontend-ci.yaml
+
+  algomap-frontend-release:
+    name: Run algomap-frontend release
+    secrets: inherit
+    uses: ./.github/workflows/algomap-frontend-cd.yaml
+    needs: algomap-frontend-validate

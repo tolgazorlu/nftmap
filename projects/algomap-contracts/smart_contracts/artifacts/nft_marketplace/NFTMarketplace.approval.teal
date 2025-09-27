@@ -1,0 +1,239 @@
+#pragma version 10
+#pragma typetrack false
+
+// @algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram() -> uint64:
+main:
+    intcblock 1
+    bytecblock 0x151f7c750000
+    // smart_contracts/nft_marketplace/contract.algo.ts:20
+    // export class NFTMarketplace extends Contract {
+    txn NumAppArgs
+    bz main_bare_routing@17
+    pushbytess 0xdbc61a18 0xc1ffb0dd 0x3d24289d 0xb579946d 0x2de8a2cc 0x25044ffb 0x550fe254 0x9dab15f1 0x371defc3 0xf4c812ac 0x70374f66 0x1ed92491 // method "initialize(string,uint64,string)string", method "createListing(uint64,uint64,string,string,uint64,uint64,string,string)string", method "buyNFT(uint64,string)string", method "cancelListing(uint64)string", method "updateListingPrice(uint64,uint64)string", method "getListingInfo(uint64)(uint64,uint64,string,string,string,uint64,uint64,string,string)", method "getMarketplaceStats()(uint64,uint64,string,string)", method "searchListingsByLocation(uint64,uint64,uint64)uint64[]", method "searchListingsByCategory(string)uint64[]", method "updateMarketplaceFee(uint64)string", method "transferOwnership(string)string", method "emergencyWithdraw(uint64,string)string"
+    txna ApplicationArgs 0
+    match main_initialize_route@3 main_createListing_route@4 main_buyNFT_route@5 main_cancelListing_route@6 main_updateListingPrice_route@7 main_getListingInfo_route@8 main_getMarketplaceStats_route@9 main_searchListingsByLocation_route@10 main_searchListingsByCategory_route@11 main_updateMarketplaceFee_route@12 main_transferOwnership_route@13 main_emergencyWithdraw_route@14
+
+main_after_if_else@21:
+    // smart_contracts/nft_marketplace/contract.algo.ts:20
+    // export class NFTMarketplace extends Contract {
+    pushint 0 // 0
+    return
+
+main_emergencyWithdraw_route@14:
+    // smart_contracts/nft_marketplace/contract.algo.ts:191
+    // public emergencyWithdraw(amount: uint64, recipient: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c75001e456d657267656e6379207769746864726177616c20636f6d706c65746564
+    log
+    intc_0 // 1
+    return
+
+main_transferOwnership_route@13:
+    // smart_contracts/nft_marketplace/contract.algo.ts:180
+    // public transferOwnership(newOwner: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/nft_marketplace/contract.algo.ts:20
+    // export class NFTMarketplace extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/nft_marketplace/contract.algo.ts:180
+    // public transferOwnership(newOwner: string): string {
+    callsub transferOwnership
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    pushbytes 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_updateMarketplaceFee_route@12:
+    // smart_contracts/nft_marketplace/contract.algo.ts:170
+    // public updateMarketplaceFee(newFeePercentage: uint64): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c75000b4665652075706461746564
+    log
+    intc_0 // 1
+    return
+
+main_searchListingsByCategory_route@11:
+    // smart_contracts/nft_marketplace/contract.algo.ts:160
+    // public searchListingsByCategory(category: string): uint64[] {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    bytec_0 // 0x151f7c750000
+    log
+    intc_0 // 1
+    return
+
+main_searchListingsByLocation_route@10:
+    // smart_contracts/nft_marketplace/contract.algo.ts:149
+    // public searchListingsByLocation(centerLat: uint64, centerLng: uint64, radiusKm: uint64): uint64[] {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    bytec_0 // 0x151f7c750000
+    log
+    intc_0 // 1
+    return
+
+main_getMarketplaceStats_route@9:
+    // smart_contracts/nft_marketplace/contract.algo.ts:126-131
+    // public getMarketplaceStats(): {
+    //   totalListings: uint64
+    //   feePercentage: uint64
+    //   marketplaceOwner: string
+    //   feeAccount: string
+    // } {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c750000000000000000000000000000000500140023000d4f574e45525f4144445245535300134645455f4143434f554e545f41444452455353
+    log
+    intc_0 // 1
+    return
+
+main_getListingInfo_route@8:
+    // smart_contracts/nft_marketplace/contract.algo.ts:96-106
+    // public getListingInfo(assetId: uint64): {
+    //   price: uint64
+    //   status: uint64
+    //   creator: string
+    //   artTitle: string
+    //   artDescription: string
+    //   locationLat: uint64
+    //   locationLng: uint64
+    //   imageUrl: string
+    //   category: string
+    // } {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c7500000000000f42400000000000000001002a003b004700000000026d3a600000000004693df0005b0078000f43524541544f525f41444452455353000a53616d706c6520417274001253616d706c65206465736372697074696f6e001b68747470733a2f2f6578616d706c652e636f6d2f6172742e6a7067000b4469676974616c20417274
+    log
+    intc_0 // 1
+    return
+
+main_updateListingPrice_route@7:
+    // smart_contracts/nft_marketplace/contract.algo.ts:85
+    // public updateListingPrice(assetId: uint64, newPrice: uint64): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c75000d50726963652075706461746564
+    log
+    intc_0 // 1
+    return
+
+main_cancelListing_route@6:
+    // smart_contracts/nft_marketplace/contract.algo.ts:74
+    // public cancelListing(assetId: uint64): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c7500114c697374696e672063616e63656c6c6564
+    log
+    intc_0 // 1
+    return
+
+main_buyNFT_route@5:
+    // smart_contracts/nft_marketplace/contract.algo.ts:64
+    // public buyNFT(assetId: uint64, seller: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c75000d4e465420707572636861736564
+    log
+    intc_0 // 1
+    return
+
+main_createListing_route@4:
+    // smart_contracts/nft_marketplace/contract.algo.ts:44-53
+    // public createListing(
+    //   assetId: uint64,
+    //   price: uint64,
+    //   artTitle: string,
+    //   artDescription: string,
+    //   locationLat: uint64,
+    //   locationLng: uint64,
+    //   imageUrl: string,
+    //   category: string,
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c75000f4c697374696e672063726561746564
+    log
+    intc_0 // 1
+    return
+
+main_initialize_route@3:
+    // smart_contracts/nft_marketplace/contract.algo.ts:27
+    // public initialize(marketplaceOwner: string, feePercentage: uint64, feeAccount: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c7500174d61726b6574706c61636520696e697469616c697a6564
+    log
+    intc_0 // 1
+    return
+
+main_bare_routing@17:
+    // smart_contracts/nft_marketplace/contract.algo.ts:20
+    // export class NFTMarketplace extends Contract {
+    txn OnCompletion
+    bnz main_after_if_else@21
+    txn ApplicationID
+    !
+    assert // can only call when creating
+    intc_0 // 1
+    return
+
+
+// smart_contracts/nft_marketplace/contract.algo.ts::NFTMarketplace.transferOwnership(newOwner: bytes) -> bytes:
+transferOwnership:
+    // smart_contracts/nft_marketplace/contract.algo.ts:180
+    // public transferOwnership(newOwner: string): string {
+    proto 1 1
+    // smart_contracts/nft_marketplace/contract.algo.ts:183
+    // return `Ownership transferred to ${newOwner}`
+    pushbytes "Ownership transferred to "
+    frame_dig -1
+    concat
+    retsub

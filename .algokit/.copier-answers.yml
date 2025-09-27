@@ -1,0 +1,10 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 2.1.6
+_src_path: gh:algorandfoundation/algokit-fullstack-template
+author_email: tolgazorlu17@gmail.com
+author_name: tolgazorlu
+cloud_provider: vercel
+contract_name: algomap
+preset_name: production
+project_name: algomap
+
